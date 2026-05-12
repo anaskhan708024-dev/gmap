@@ -1,0 +1,40 @@
+{
+  "name": "Google Maps Location Directions",
+  "short_name": "GMap Directions",
+  "description": "A web application to view locations on Google Maps and get directions to them",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#2563eb",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%232563eb' width='192' height='192'/><text x='96' y='96' font-size='80' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>G</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect fill='%232563eb' width='512' height='512'/><text x='256' y='256' font-size='220' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>G</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["maps", "navigation"],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 540 720'><rect fill='%23f3f4f6' width='540' height='720'/><text x='270' y='360' font-size='60' font-weight='bold' fill='%232563eb' text-anchor='middle' dominant-baseline='central'>Google Maps</text></svg>",
+      "sizes": "540x720",
+      "type": "image/svg+xml",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1280 720'><rect fill='%23f3f4f6' width='1280' height='720'/><text x='640' y='360' font-size='60' font-weight='bold' fill='%232563eb' text-anchor='middle' dominant-baseline='central'>Google Maps</text></svg>",
+      "sizes": "1280x720",
+      "type": "image/svg+xml",
+      "form_factor": "wide"
+    }
+  ]
+}

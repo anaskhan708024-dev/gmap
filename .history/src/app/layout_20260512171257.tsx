@@ -1,17 +1,20 @@
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
-  themeColor: "#2563eb",
-};
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  title: "CSV Location Map",
-  description: "View CSV locations on an interactive mobile map and get directions",
+  title: "Google Maps Location Directions",
+  description: "View locations from CSV on Google Maps and get directions to them",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
@@ -21,6 +24,7 @@ export const metadata: Metadata = {
   formatDetection: {
     telephone: false,
   },
+  themeColor: "#2563eb",
 };
 
 export default function RootLayout({
@@ -29,7 +33,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable}`}
+    >
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
         <meta name="mobile-web-app-capable" content="yes" />
