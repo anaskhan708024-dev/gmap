@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
 
 :root {
   --background: #ffffff;
@@ -23,4 +24,68 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.leaflet-container {
+  background: #dfe8db;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.leaflet-control-attribution {
+  font-size: 10px;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+}
+
+.leaflet-popup-content {
+  margin: 12px;
+}
+
+.leaflet-location-marker {
+  align-items: center;
+  background: #059669;
+  border: 2px solid #ffffff;
+  border-radius: 999px 999px 999px 0;
+  box-shadow: 0 12px 24px rgb(15 23 42 / 0.24);
+  color: #ffffff;
+  display: flex;
+  font-size: 11px;
+  font-weight: 800;
+  height: 36px;
+  justify-content: center;
+  line-height: 1;
+  min-width: 36px;
+  padding: 0 8px;
+  transform: rotate(-45deg);
+  transition: background-color 180ms ease, transform 180ms ease;
+  white-space: nowrap;
+}
+
+.leaflet-location-marker::before {
+  background: rgb(255 255 255 / 0.35);
+  border-radius: 999px;
+  content: "";
+  height: 6px;
+  left: 7px;
+  position: absolute;
+  top: 7px;
+  width: 6px;
+}
+
+.leaflet-location-marker.is-active,
+.leaflet-location-marker:hover {
+  background: #dc2626;
+  transform: rotate(-45deg) scale(1.08);
+}
+
+.leaflet-current-marker {
+  background: #2563eb;
+  border: 2px solid #ffffff;
+  border-radius: 999px;
+  box-shadow: 0 0 0 8px rgb(37 99 235 / 0.18), 0 8px 20px rgb(15 23 42 / 0.25);
+  display: block;
+  height: 20px;
+  width: 20px;
 }
