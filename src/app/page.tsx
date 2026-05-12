@@ -50,7 +50,7 @@ export default function Home() {
 
   return (
     <main className="relative h-[100dvh] w-screen overflow-hidden bg-gray-100">
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 z-0">
         {locations.length > 0 && !loading ? (
           <MapComponent
             currentLocation={currentLocation}
@@ -68,7 +68,7 @@ export default function Home() {
         )}
       </div>
 
-      <section className="absolute left-3 right-3 top-3 z-50 sm:left-4 sm:right-auto sm:w-80">
+      <section className="absolute left-3 right-3 top-3 z-[1000] sm:left-4 sm:right-auto sm:w-80">
         <div className="rounded-md bg-white/95 p-2 shadow-xl backdrop-blur">
           <div className="flex items-center gap-2">
             <select
